@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #ef95ff;
+}
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid #333;
+    border-radius: 15px;
+    background-color: #f8b400;
+    color: #fff;
+    font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+    box-shadow: 0 5px 0 #333, 0 10px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+button:hover {
+    background-color: #ffc107;
+    box-shadow: 0 3px 0 #333, 0 7px 10px rgba(0, 0, 0, 0.2);
+}
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 #333, 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+#counter {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+}
+#highScore{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+}
+#resetRate{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+}
+
+.custom-alert {
+    display: none; /* 預設為隱藏 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffc107;
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.alert-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Comic Sans MS', 'Chalkboard', sans-serif;
+}
+
+.alert-content button {
+    padding: 10px 20px;
+    background-color: #ef95ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
